@@ -1,0 +1,122 @@
+{
+  "roleLabels": {
+    "admin": "Superadministrador",
+    "client_admin": "Administrador de cliente",
+    "supervisor": "Supervisor",
+    "operator": "Operador",
+    "technician": "Técnico de mantenimiento",
+    "viewer": "Solo consulta"
+  },
+  "typeLabels": {
+    "humanoid": "Humanoide",
+    "drone": "Dron aéreo",
+    "quadruped": "Cuadrúpedo",
+    "amr": "Transporte móvil",
+    "arm": "Brazo robótico",
+    "service": "Asistencia",
+    "cleaner": "Limpieza"
+  },
+  "capabilityLabels": {
+    "move": "Desplazamiento",
+    "fly": "Vuelo",
+    "manipulate": "Manipulación",
+    "carry": "Transporte",
+    "camera": "Cámara",
+    "audio": "Audio",
+    "sensors": "Sensores",
+    "clean": "Limpieza",
+    "guide": "Guía",
+    "dock": "Carga"
+  },
+  "statusLabels": {
+    "available": "Disponible",
+    "busy": "En misión",
+    "charging": "Cargando",
+    "offline": "Desconectado",
+    "fault": "Con falla",
+    "maintenance": "Mantenimiento",
+    "draft": "Borrador",
+    "scheduled": "Programada",
+    "assigned": "Asignada",
+    "accepted": "Aceptada",
+    "running": "En ejecución",
+    "paused": "Pausada",
+    "completed": "Completada",
+    "failed": "Fallida",
+    "cancelled": "Cancelada",
+    "requested": "Solicitado",
+    "sent": "Enviado",
+    "received": "Recibido",
+    "executing": "En ejecución",
+    "confirmed": "Confirmado",
+    "rejected": "Rechazado",
+    "expired": "Caducado",
+    "unknown": "Resultado desconocido",
+    "open": "Abierta",
+    "acknowledged": "En atención",
+    "resolved": "Resuelta",
+    "pending": "Pendiente",
+    "awaiting_confirmation": "Espera confirmación"
+  },
+  "commandLabels": {
+    "start": "Iniciar misión",
+    "pause": "Pausar misión",
+    "resume": "Reanudar",
+    "cancel": "Cancelar misión",
+    "return_base": "Regresar a base",
+    "land": "Solicitar aterrizaje",
+    "charge": "Iniciar carga"
+  },
+  "capabilitiesByType": {
+    "humanoid": [
+      "move",
+      "carry",
+      "manipulate",
+      "camera",
+      "audio",
+      "sensors",
+      "guide",
+      "dock"
+    ],
+    "drone": [
+      "fly",
+      "camera",
+      "sensors"
+    ],
+    "quadruped": [
+      "move",
+      "camera",
+      "sensors",
+      "dock"
+    ],
+    "amr": [
+      "move",
+      "carry",
+      "sensors",
+      "dock"
+    ],
+    "arm": [
+      "manipulate",
+      "sensors"
+    ],
+    "service": [
+      "move",
+      "guide",
+      "audio",
+      "sensors",
+      "dock"
+    ],
+    "cleaner": [
+      "move",
+      "clean",
+      "sensors",
+      "dock"
+    ]
+  },
+  "activeStatuses": [
+    "assigned",
+    "accepted",
+    "running",
+    "paused"
+  ]
+}

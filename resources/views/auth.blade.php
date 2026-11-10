@@ -1,0 +1,12 @@
+@extends('layout')
+@section('title',($mode==='login'?'Ingresar':($mode==='register'?'Registro':'Mi cuenta')).' | Tairobots')
+@section('body')
+<main class="account-shell"><header class="account-header"><a class="wordmark" href="{{ route('home') }}">Tairobots<span>.</span></a><a href="{{ route('home') }}">Volver al inicio ↗</a></header><section class="account-card"><p class="eyebrow">Tu espacio de trabajo</p><h1>{{ $mode==='login'?'Bienvenido.':($mode==='register'?'Crea tu cuenta.':'Mi cuenta.') }}</h1><p class="account-intro">{{ $mode==='login'?'Ingresa con tu correo y contraseña.':'Gestiona tu perfil en Tairobots.' }}</p>@include('partials.feedback')
+<form method="post" class="account-form" action="{{ route($mode==='login'?'login.store':($mode==='register'?'register.store':'account.update')) }}">@csrf
+@if($mode!=='login')<label>Nombre completo<input name="name" value="{{ old('name',auth()->user()?->name) }}" required minlength="2" maxlength="100" autocomplete="name"></label><label>Empresa (opcional)<input name="empresa" value="{{ old('empresa',auth()->user()?->empresa) }}" maxlength="160" autocomplete="organization"></label>@endif
+<label>Correo electrónico<input name="email" type="email" value="{{ old('email',auth()->user()?->email) }}" required maxlength="254" autocomplete="email" @readonly($mode==='account')></label>
+@if($mode!=='account')<label>Contraseña<input name="password" type="password" required maxlength="128" minlength="{{ $mode==='register'?12:1 }}" autocomplete="{{ $mode==='register'?'new-password':'current-password' }}"></label>@endif
+@if($mode==='register')<label>Repetir contraseña<input name="password_confirmation" type="password" required minlength="12" autocomplete="new-password"></label><label class="check"><input type="checkbox" name="consentimiento" value="1" required>Acepto el uso de mis datos para crear y gestionar mi cuenta.</label><p class="muted">Usa al menos 12 caracteres.</p>@endif
+<button class="button button-dark">{{ $mode==='login'?'Ingresar':($mode==='register'?'Crear cuenta':'Guardar cambios') }} ↗</button></form>
+@if($mode==='login')<p class="account-help">¿Aún no tienes cuenta? <a href="{{ route('register') }}">Regístrate</a>.</p>@elseif($mode==='register')<p class="account-help">¿Ya tienes cuenta? <a href="{{ route('login') }}">Inicia sesión</a>.</p>@else<form method="post" action="{{ route('logout') }}">@csrf<button class="text-link">Cerrar sesión</button></form>@endif</section></main>
+@endsection

@@ -1,0 +1,1616 @@
+{
+  "clients": [
+    {
+      "id": "salud",
+      "name": "Horizonte Salud",
+      "industry": "Hospitales y atención médica",
+      "sites": [
+        {
+          "id": "polanco",
+          "name": "Hospital Polanco",
+          "environment": "Hospital",
+          "building": "Torre A",
+          "floor": "Planta baja",
+          "frame": "polanco-a-pb",
+          "units": "m",
+          "width": 100,
+          "height": 70
+        },
+        {
+          "id": "sur",
+          "name": "Centro Médico Sur",
+          "environment": "Hospital",
+          "building": "Edificio principal",
+          "floor": "Planta baja",
+          "frame": "sur-principal-pb",
+          "units": "m",
+          "width": 100,
+          "height": 70
+        }
+      ],
+      "robots": [
+        {
+          "id": "r1",
+          "name": "Atlas H1",
+          "type": "humanoid",
+          "siteId": "polanco",
+          "fleet": "Asistencia",
+          "battery": 86,
+          "x": 18,
+          "y": 33,
+          "serial": "SIM-2026-0001",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual humanoid",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Horizonte Salud",
+          "area": "Área de operación",
+          "responsible": "Mariana Torres",
+          "capabilities": [
+            "move",
+            "carry",
+            "manipulate",
+            "camera",
+            "audio",
+            "sensors",
+            "guide",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 20
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "polanco-a-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r2",
+          "name": "Cargo M2",
+          "type": "amr",
+          "siteId": "polanco",
+          "fleet": "Logística clínica",
+          "battery": 72,
+          "x": 42,
+          "y": 33,
+          "serial": "SIM-2026-0002",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual amr",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Horizonte Salud",
+          "area": "Área de operación",
+          "responsible": "Mariana Torres",
+          "capabilities": [
+            "move",
+            "carry",
+            "sensors",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 20
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "polanco-a-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r3",
+          "name": "Aura S1",
+          "type": "service",
+          "siteId": "polanco",
+          "fleet": "Asistencia",
+          "battery": 94,
+          "x": 75,
+          "y": 33,
+          "serial": "SIM-2026-0003",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual service",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Horizonte Salud",
+          "area": "Área de operación",
+          "responsible": "Mariana Torres",
+          "capabilities": [
+            "move",
+            "guide",
+            "audio",
+            "sensors",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 0
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "polanco-a-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r4",
+          "name": "Luma C2",
+          "type": "cleaner",
+          "siteId": "sur",
+          "fleet": "Servicios generales",
+          "battery": 65,
+          "x": 26,
+          "y": 33,
+          "serial": "SIM-2026-0004",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual cleaner",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Horizonte Salud",
+          "area": "Área de operación",
+          "responsible": "Mariana Torres",
+          "capabilities": [
+            "move",
+            "clean",
+            "sensors",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 0
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "sur-principal-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r5",
+          "name": "Scout Q1",
+          "type": "quadruped",
+          "siteId": "sur",
+          "fleet": "Inspección",
+          "battery": 88,
+          "x": 65,
+          "y": 33,
+          "serial": "SIM-2026-0005",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual quadruped",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Horizonte Salud",
+          "area": "Área de operación",
+          "responsible": "Mariana Torres",
+          "capabilities": [
+            "move",
+            "camera",
+            "sensors",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 0
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "sur-principal-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        }
+      ],
+      "missions": [],
+      "commands": [],
+      "alerts": [],
+      "maintenance": [],
+      "events": [
+        {
+          "id": "e09f8c70-c8ca-45ff-b58c-e1ccc5e7c52b",
+          "at": 1794188038573,
+          "actor": "Sistema",
+          "action": "workspace.seeded",
+          "siteId": null,
+          "robotId": null,
+          "detail": "Entorno de simulación inicializado. Todos los dispositivos son virtuales."
+        }
+      ],
+      "zones": [
+        {
+          "id": "polanco-dock",
+          "siteId": "polanco",
+          "name": "Estación de carga",
+          "kind": "charging",
+          "x": 8,
+          "y": 52,
+          "w": 16,
+          "h": 10
+        },
+        {
+          "id": "polanco-restricted",
+          "siteId": "polanco",
+          "name": "Acceso restringido",
+          "kind": "restricted",
+          "x": 78,
+          "y": 52,
+          "w": 14,
+          "h": 10
+        },
+        {
+          "id": "sur-dock",
+          "siteId": "sur",
+          "name": "Estación de carga",
+          "kind": "charging",
+          "x": 8,
+          "y": 52,
+          "w": 16,
+          "h": 10
+        },
+        {
+          "id": "sur-restricted",
+          "siteId": "sur",
+          "name": "Acceso restringido",
+          "kind": "restricted",
+          "x": 78,
+          "y": 52,
+          "w": 14,
+          "h": 10
+        }
+      ],
+      "resources": [
+        {
+          "id": "polanco-dock",
+          "siteId": "polanco",
+          "name": "Estación de carga 01",
+          "kind": "charger",
+          "occupiedBy": null
+        },
+        {
+          "id": "polanco-lift",
+          "siteId": "polanco",
+          "name": "Elevador de servicio",
+          "kind": "elevator"
+        },
+        {
+          "id": "sur-dock",
+          "siteId": "sur",
+          "name": "Estación de carga 01",
+          "kind": "charger",
+          "occupiedBy": null
+        },
+        {
+          "id": "sur-lift",
+          "siteId": "sur",
+          "name": "Elevador de servicio",
+          "kind": "elevator"
+        }
+      ],
+      "rules": [],
+      "lastPulse": 1794188038573,
+      "settings": {
+        "retentionDays": 90
+      }
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas Logistics",
+      "industry": "Logística y manufactura",
+      "sites": [
+        {
+          "id": "cedis",
+          "name": "CEDIS Norte",
+          "environment": "Almacén",
+          "building": "Nave 1",
+          "floor": "Planta baja",
+          "frame": "cedis-n1-pb",
+          "units": "m",
+          "width": 100,
+          "height": 70
+        }
+      ],
+      "robots": [
+        {
+          "id": "r6",
+          "name": "Aero D1",
+          "type": "drone",
+          "siteId": "cedis",
+          "fleet": "Inspección aérea",
+          "battery": 79,
+          "x": 20,
+          "y": 33,
+          "serial": "SIM-2026-0006",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual drone",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Atlas Logistics",
+          "area": "Área de operación",
+          "responsible": "Daniel Vega",
+          "capabilities": [
+            "fly",
+            "camera",
+            "sensors"
+          ],
+          "commands": [
+            "return_base",
+            "land",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 3,
+            "payload": 0
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "cedis-n1-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r7",
+          "name": "Forge A1",
+          "type": "arm",
+          "siteId": "cedis",
+          "fleet": "Manufactura",
+          "battery": 100,
+          "x": 74,
+          "y": 16,
+          "serial": "SIM-2026-0007",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual arm",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Atlas Logistics",
+          "area": "Área de operación",
+          "responsible": "Daniel Vega",
+          "capabilities": [
+            "manipulate",
+            "sensors"
+          ],
+          "commands": [
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 0
+          },
+          "status": "available",
+          "lastSeen": 1794188038573,
+          "frame": "cedis-n1-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        },
+        {
+          "id": "r8",
+          "name": "Cargo M3",
+          "type": "amr",
+          "siteId": "cedis",
+          "fleet": "Logística",
+          "battery": 42,
+          "x": 16,
+          "y": 57,
+          "serial": "SIM-2026-0008",
+          "manufacturer": "NEXO Simulator",
+          "model": "Virtual amr",
+          "software": "sim/1.0.0",
+          "photo": "",
+          "owner": "Atlas Logistics",
+          "area": "Área de operación",
+          "responsible": "Daniel Vega",
+          "capabilities": [
+            "move",
+            "carry",
+            "sensors",
+            "dock"
+          ],
+          "commands": [
+            "return_base",
+            "charge",
+            "start",
+            "pause",
+            "resume",
+            "cancel"
+          ],
+          "limits": {
+            "speed": 0.8,
+            "payload": 20
+          },
+          "status": "charging",
+          "lastSeen": 1794188038573,
+          "frame": "cedis-n1-pb",
+          "maintenanceDue": 1794792838573,
+          "blocked": false,
+          "connection": "simulator",
+          "source": "simulated",
+          "documents": []
+        }
+      ],
+      "missions": [],
+      "commands": [],
+      "alerts": [],
+      "maintenance": [],
+      "events": [
+        {
+          "id": "f450493c-326e-4a47-a54c-670bce365947",
+          "at": 1794188038573,
+          "actor": "Sistema",
+          "action": "workspace.seeded",
+          "siteId": null,
+          "robotId": null,
+          "detail": "Entorno de simulación inicializado. Todos los dispositivos son virtuales."
+        }
+      ],
+      "zones": [
+        {
+          "id": "cedis-dock",
+          "siteId": "cedis",
+          "name": "Estación de carga",
+          "kind": "charging",
+          "x": 8,
+          "y": 52,
+          "w": 16,
+          "h": 10
+        },
+        {
+          "id": "cedis-restricted",
+          "siteId": "cedis",
+          "name": "Acceso restringido",
+          "kind": "restricted",
+          "x": 78,
+          "y": 52,
+          "w": 14,
+          "h": 10
+        }
+      ],
+      "resources": [
+        {
+          "id": "cedis-dock",
+          "siteId": "cedis",
+          "name": "Estación de carga 01",
+          "kind": "charger",
+          "occupiedBy": "r8"
+        },
+        {
+          "id": "cedis-lift",
+          "siteId": "cedis",
+          "name": "Elevador de servicio",
+          "kind": "elevator"
+        }
+      ],
+      "rules": [],
+      "lastPulse": 1794188038573,
+      "settings": {
+        "retentionDays": 90
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "base-maintenance-1",
+      "name": "Inspección preventiva de equipos",
+      "category": "Mantenimiento preventivo y correctivo",
+      "categoryId": "maintenance",
+      "subcategory": "Inspección preventiva",
+      "subcategoryId": "maintenance-1",
+      "instructions": "Recorrer los puntos autorizados y revisar las lecturas disponibles según el procedimiento del equipo. Registrar desviaciones sin modificar parámetros del sistema.",
+      "completion": "Lecturas registradas y lista de inspección revisada por el responsable.",
+      "steps": [
+        {
+          "name": "Inspección preventiva de equipos",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-maintenance-2",
+      "name": "Documentar una anomalía de equipo",
+      "category": "Mantenimiento preventivo y correctivo",
+      "categoryId": "maintenance",
+      "subcategory": "Diagnóstico de fallas",
+      "subcategoryId": "maintenance-2",
+      "instructions": "Capturar evidencia autorizada de una anomalía y describir su ubicación para el técnico. No abrir resguardos ni intervenir equipos energizados.",
+      "completion": "Evidencia asociada a la falla y recepción confirmada por mantenimiento.",
+      "steps": [
+        {
+          "name": "Documentar una anomalía de equipo",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-maintenance-3",
+      "name": "Entrega de repuestos y herramientas",
+      "category": "Mantenimiento preventivo y correctivo",
+      "categoryId": "maintenance",
+      "subcategory": "Apoyo correctivo",
+      "subcategoryId": "maintenance-3",
+      "instructions": "Transportar repuestos identificados desde el almacén hasta el punto de intervención autorizado. Verificar carga y destinatario.",
+      "completion": "Repuestos recibidos por el técnico y entrega confirmada.",
+      "steps": [
+        {
+          "name": "Entrega de repuestos y herramientas",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-maintenance-4",
+      "name": "Verificación después de una intervención",
+      "category": "Mantenimiento preventivo y correctivo",
+      "categoryId": "maintenance",
+      "subcategory": "Verificación posterior",
+      "subcategoryId": "maintenance-4",
+      "instructions": "Registrar las lecturas permitidas después de la intervención. La autorización de puesta en servicio corresponde al técnico responsable.",
+      "completion": "Lecturas y observaciones revisadas por mantenimiento.",
+      "steps": [
+        {
+          "name": "Verificación después de una intervención",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-home-1",
+      "name": "Traslado de objetos del hogar",
+      "category": "Hogar",
+      "categoryId": "home",
+      "subcategory": "Orden y organización",
+      "subcategoryId": "home-1",
+      "instructions": "Trasladar objetos autorizados entre ubicaciones accesibles. Confirmar identificación, peso y destino antes de comenzar.",
+      "completion": "Objeto depositado en el destino y recepción confirmada.",
+      "steps": [
+        {
+          "name": "Traslado de objetos del hogar",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-home-2",
+      "name": "Entrega de artículos de uso diario",
+      "category": "Hogar",
+      "categoryId": "home",
+      "subcategory": "Asistencia doméstica",
+      "subcategoryId": "home-2",
+      "instructions": "Llevar un artículo solicitado al usuario autorizado y esperar confirmación. No suministrar medicamentos ni realizar decisiones clínicas.",
+      "completion": "Entrega confirmada por el solicitante.",
+      "steps": [
+        {
+          "name": "Entrega de artículos de uso diario",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-home-3",
+      "name": "Guiar a una persona dentro del hogar",
+      "category": "Hogar",
+      "categoryId": "home",
+      "subcategory": "Acompañamiento",
+      "subcategoryId": "home-3",
+      "instructions": "Guiar por una ruta accesible y autorizada, respetando el ritmo de la persona. Solicitar ayuda si la ruta queda bloqueada.",
+      "completion": "Llegada al destino y confirmación de la persona.",
+      "steps": [
+        {
+          "name": "Guiar a una persona dentro del hogar",
+          "capability": "guide"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-home-4",
+      "name": "Custodia y seguimiento de mascota",
+      "category": "Hogar",
+      "categoryId": "home",
+      "subcategory": "Custodia de mascotas",
+      "subcategoryId": "home-4",
+      "instructions": "Mantener observación de la mascota identificada mediante referencias autorizadas. Seguirla únicamente dentro del área permitida y a distancia segura, sin perseguirla ni inmovilizarla. Ante pérdida de identificación o dudas, pausar y alertar al responsable.",
+      "completion": "Registro de observación y cierre confirmado por el responsable; el seguimiento físico requiere un conector validado.",
+      "steps": [
+        {
+          "name": "Observar y confirmar la mascota objetivo",
+          "capability": "camera"
+        },
+        {
+          "name": "Acompañar dentro del área autorizada",
+          "capability": "move"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-home-5",
+      "name": "Revisión de sensores domésticos",
+      "category": "Hogar",
+      "categoryId": "home",
+      "subcategory": "Revisión del entorno",
+      "subcategoryId": "home-5",
+      "instructions": "Consultar sensores habilitados del entorno y registrar valores fuera de los límites configurados por el responsable.",
+      "completion": "Registro de lecturas y notificación de anomalías.",
+      "steps": [
+        {
+          "name": "Revisión de sensores domésticos",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-security-1",
+      "name": "Rondín de observación en instalaciones",
+      "category": "Seguridad y vigilancia",
+      "categoryId": "security",
+      "subcategory": "Rondines",
+      "subcategoryId": "security-1",
+      "instructions": "Recorrer puntos autorizados y capturar evidencia permitida. Respetar privacidad y zonas de exclusión; informar anomalías sin confrontar personas.",
+      "completion": "Puntos revisados y reporte de hallazgos confirmado.",
+      "steps": [
+        {
+          "name": "Rondín de observación en instalaciones",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-security-2",
+      "name": "Inspección visual de perímetro",
+      "category": "Seguridad y vigilancia",
+      "categoryId": "security",
+      "subcategory": "Perímetros",
+      "subcategoryId": "security-2",
+      "instructions": "Inspeccionar tramos del perímetro autorizado y documentar daños u obstrucciones. Mantener límites locales y separación segura.",
+      "completion": "Evidencia por tramo y revisión del supervisor.",
+      "steps": [
+        {
+          "name": "Inspección visual de perímetro",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-security-3",
+      "name": "Verificación visual de accesos",
+      "category": "Seguridad y vigilancia",
+      "categoryId": "security",
+      "subcategory": "Accesos",
+      "subcategoryId": "security-3",
+      "instructions": "Observar el estado de accesos desde puntos permitidos. No identificar personas ni desbloquear puertas sin un conector y autorización específicos.",
+      "completion": "Registro del estado de accesos revisado.",
+      "steps": [
+        {
+          "name": "Verificación visual de accesos",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-security-4",
+      "name": "Documentación de un incidente reportado",
+      "category": "Seguridad y vigilancia",
+      "categoryId": "security",
+      "subcategory": "Incidentes",
+      "subcategoryId": "security-4",
+      "instructions": "Acudir solo si el área ha sido declarada segura y registrar evidencia autorizada para el supervisor. No intervenir físicamente.",
+      "completion": "Evidencia entregada y recepción confirmada.",
+      "steps": [
+        {
+          "name": "Documentación de un incidente reportado",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-transport-1",
+      "name": "Entrega interna de paquetes",
+      "category": "Transporte",
+      "categoryId": "transport",
+      "subcategory": "Paquetería",
+      "subcategoryId": "transport-1",
+      "instructions": "Recoger un paquete identificado, verificar destino y trasladarlo por la ruta autorizada. Esperar recepción del destinatario.",
+      "completion": "Entrega confirmada con identificación del paquete.",
+      "steps": [
+        {
+          "name": "Entrega interna de paquetes",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-transport-2",
+      "name": "Entrega en punto de recepción",
+      "category": "Transporte",
+      "categoryId": "transport",
+      "subcategory": "Última milla",
+      "subcategoryId": "transport-2",
+      "instructions": "Trasladar un envío al punto de recepción habilitado. Adaptar accesos, carga y confirmación a las condiciones del cliente.",
+      "completion": "Envío recibido por la persona autorizada.",
+      "steps": [
+        {
+          "name": "Entrega en punto de recepción",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-transport-3",
+      "name": "Traslado de documentación",
+      "category": "Transporte",
+      "categoryId": "transport",
+      "subcategory": "Documentos",
+      "subcategoryId": "transport-3",
+      "instructions": "Transportar documentación en un contenedor autorizado, manteniendo trazabilidad del origen y destino.",
+      "completion": "Recepción registrada por el destinatario.",
+      "steps": [
+        {
+          "name": "Traslado de documentación",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-transport-4",
+      "name": "Recolección de objetos para devolución",
+      "category": "Transporte",
+      "categoryId": "transport",
+      "subcategory": "Logística inversa",
+      "subcategoryId": "transport-4",
+      "instructions": "Recoger artículos identificados para devolución y trasladarlos al área asignada. Separar entregas según las instrucciones del cliente.",
+      "completion": "Artículos recibidos y conciliados en el área de devolución.",
+      "steps": [
+        {
+          "name": "Recolección de objetos para devolución",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-service-1",
+      "name": "Acompañamiento desde recepción",
+      "category": "Atención a cliente",
+      "categoryId": "service",
+      "subcategory": "Recepción",
+      "subcategoryId": "service-1",
+      "instructions": "Recibir la solicitud de destino y acompañar al visitante por una ruta accesible, sin acceder a áreas privadas.",
+      "completion": "Visitante acompañado al destino confirmado.",
+      "steps": [
+        {
+          "name": "Acompañamiento desde recepción",
+          "capability": "guide"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-service-2",
+      "name": "Guía a un área de servicio",
+      "category": "Atención a cliente",
+      "categoryId": "service",
+      "subcategory": "Orientación",
+      "subcategoryId": "service-2",
+      "instructions": "Guiar a la persona al área solicitada y comunicar las indicaciones aprobadas por el establecimiento.",
+      "completion": "Llegada al área correcta confirmada.",
+      "steps": [
+        {
+          "name": "Guía a un área de servicio",
+          "capability": "guide"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-service-3",
+      "name": "Presentación de información autorizada",
+      "category": "Atención a cliente",
+      "categoryId": "service",
+      "subcategory": "Información",
+      "subcategoryId": "service-3",
+      "instructions": "Reproducir únicamente información aprobada sobre servicios y horarios. Escalar consultas no contempladas a una persona.",
+      "completion": "Contenido presentado y atención confirmada.",
+      "steps": [
+        {
+          "name": "Presentación de información autorizada",
+          "capability": "audio"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-service-4",
+      "name": "Entrega de artículos de cortesía",
+      "category": "Atención a cliente",
+      "categoryId": "service",
+      "subcategory": "Entrega al cliente",
+      "subcategoryId": "service-4",
+      "instructions": "Transportar artículos autorizados al punto de atención y confirmar recepción, respetando límites de carga.",
+      "completion": "Artículos entregados y recepción confirmada.",
+      "steps": [
+        {
+          "name": "Entrega de artículos de cortesía",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-manufacturing-1",
+      "name": "Entrega de materiales a producción",
+      "category": "Producción y fabricación",
+      "categoryId": "manufacturing",
+      "subcategory": "Abastecimiento de línea",
+      "subcategoryId": "manufacturing-1",
+      "instructions": "Trasladar materiales identificados al punto autorizado de abastecimiento, respetando zonas de máquinas y circulación.",
+      "completion": "Material recibido por el responsable de línea.",
+      "steps": [
+        {
+          "name": "Entrega de materiales a producción",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-manufacturing-2",
+      "name": "Posicionamiento de piezas en estación",
+      "category": "Producción y fabricación",
+      "categoryId": "manufacturing",
+      "subcategory": "Manipulación",
+      "subcategoryId": "manufacturing-2",
+      "instructions": "Preparar una tarea de posicionamiento de piezas conforme al utillaje y al procedimiento validado de la celda. Requiere adaptación y pruebas específicas del fabricante.",
+      "completion": "Pieza posicionada y verificación autorizada del resultado.",
+      "steps": [
+        {
+          "name": "Posicionamiento de piezas en estación",
+          "capability": "manipulate"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-manufacturing-3",
+      "name": "Inspección visual de producto",
+      "category": "Producción y fabricación",
+      "categoryId": "manufacturing",
+      "subcategory": "Control de calidad",
+      "subcategoryId": "manufacturing-3",
+      "instructions": "Capturar imágenes autorizadas de las piezas en una estación definida. La clasificación de calidad queda a cargo del proceso validado del cliente.",
+      "completion": "Imágenes registradas y revisión del responsable de calidad.",
+      "steps": [
+        {
+          "name": "Inspección visual de producto",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-manufacturing-4",
+      "name": "Lectura de sensores de producción",
+      "category": "Producción y fabricación",
+      "categoryId": "manufacturing",
+      "subcategory": "Seguimiento de proceso",
+      "subcategoryId": "manufacturing-4",
+      "instructions": "Consultar sensores habilitados de una estación y registrar desviaciones. No modificar consignas de proceso.",
+      "completion": "Lecturas disponibles y revisión de anomalías confirmada.",
+      "steps": [
+        {
+          "name": "Lectura de sensores de producción",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-cleaning-1",
+      "name": "Limpieza de un área delimitada",
+      "category": "Limpieza y servicios generales",
+      "categoryId": "cleaning",
+      "subcategory": "Pisos",
+      "subcategoryId": "cleaning-1",
+      "instructions": "Limpiar el perímetro autorizado según el material y procedimiento del cliente. Pausar ante obstáculos o presencia que requiera intervención.",
+      "completion": "Cobertura revisada y resultado confirmado.",
+      "steps": [
+        {
+          "name": "Limpieza de un área delimitada",
+          "capability": "clean"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-cleaning-2",
+      "name": "Limpieza programada de pasillos",
+      "category": "Limpieza y servicios generales",
+      "categoryId": "cleaning",
+      "subcategory": "Pasillos",
+      "subcategoryId": "cleaning-2",
+      "instructions": "Limpiar pasillos dentro de la ventana autorizada, manteniendo libres accesos y rutas prioritarias.",
+      "completion": "Recorrido finalizado y revisión del área confirmada.",
+      "steps": [
+        {
+          "name": "Limpieza programada de pasillos",
+          "capability": "clean"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-cleaning-3",
+      "name": "Limpieza de áreas comunes",
+      "category": "Limpieza y servicios generales",
+      "categoryId": "cleaning",
+      "subcategory": "Áreas comunes",
+      "subcategoryId": "cleaning-3",
+      "instructions": "Realizar limpieza en las áreas habilitadas y registrar zonas que no pudieron atenderse.",
+      "completion": "Áreas atendidas y excepciones revisadas.",
+      "steps": [
+        {
+          "name": "Limpieza de áreas comunes",
+          "capability": "clean"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-cleaning-4",
+      "name": "Entrega de insumos de limpieza",
+      "category": "Limpieza y servicios generales",
+      "categoryId": "cleaning",
+      "subcategory": "Reposición",
+      "subcategoryId": "cleaning-4",
+      "instructions": "Transportar insumos cerrados y autorizados al punto de reposición. No mezclar productos ni manipular sustancias sin compatibilidad específica.",
+      "completion": "Insumos recibidos por el responsable.",
+      "steps": [
+        {
+          "name": "Entrega de insumos de limpieza",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-health-1",
+      "name": "Entrega de suministros no clínicos",
+      "category": "Hospitales y asistencia",
+      "categoryId": "health",
+      "subcategory": "Logística hospitalaria",
+      "subcategoryId": "health-1",
+      "instructions": "Transportar suministros no clínicos autorizados a un área habilitada, respetando rutas y procedimientos del hospital.",
+      "completion": "Recepción confirmada por el responsable del área.",
+      "steps": [
+        {
+          "name": "Entrega de suministros no clínicos",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-health-2",
+      "name": "Guía hacia consultorios",
+      "category": "Hospitales y asistencia",
+      "categoryId": "health",
+      "subcategory": "Orientación de visitantes",
+      "subcategoryId": "health-2",
+      "instructions": "Acompañar a visitantes a una ubicación autorizada evitando zonas restringidas y la exposición de datos personales.",
+      "completion": "Llegada al punto de atención confirmada.",
+      "steps": [
+        {
+          "name": "Guía hacia consultorios",
+          "capability": "guide"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-health-3",
+      "name": "Revisión de sensores ambientales",
+      "category": "Hospitales y asistencia",
+      "categoryId": "health",
+      "subcategory": "Supervisión ambiental",
+      "subcategoryId": "health-3",
+      "instructions": "Consultar sensores ambientales disponibles y reportar desviaciones según límites establecidos por el cliente.",
+      "completion": "Lecturas registradas y anomalías notificadas.",
+      "steps": [
+        {
+          "name": "Revisión de sensores ambientales",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-health-4",
+      "name": "Entrega de material administrativo",
+      "category": "Hospitales y asistencia",
+      "categoryId": "health",
+      "subcategory": "Apoyo a personal",
+      "subcategoryId": "health-4",
+      "instructions": "Llevar material administrativo identificado a una estación autorizada y esperar recepción.",
+      "completion": "Material entregado y confirmado.",
+      "steps": [
+        {
+          "name": "Entrega de material administrativo",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-inspection-1",
+      "name": "Inspección visual de áreas técnicas",
+      "category": "Inspección e infraestructura",
+      "categoryId": "inspection",
+      "subcategory": "Edificios",
+      "subcategoryId": "inspection-1",
+      "instructions": "Observar puntos accesibles autorizados y registrar deterioros visibles sin acceder a espacios peligrosos.",
+      "completion": "Evidencia de cada punto revisada por el responsable.",
+      "steps": [
+        {
+          "name": "Inspección visual de áreas técnicas",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-inspection-2",
+      "name": "Inspección de pasillos y estanterías",
+      "category": "Inspección e infraestructura",
+      "categoryId": "inspection",
+      "subcategory": "Almacenes",
+      "subcategoryId": "inspection-2",
+      "instructions": "Documentar obstrucciones y daños visibles desde los pasillos autorizados. No corregir estructuras ni mover cargas no asignadas.",
+      "completion": "Hallazgos localizados y reporte revisado.",
+      "steps": [
+        {
+          "name": "Inspección de pasillos y estanterías",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-inspection-3",
+      "name": "Preparación de inspección aérea",
+      "category": "Inspección e infraestructura",
+      "categoryId": "inspection",
+      "subcategory": "Exteriores y drones",
+      "subcategoryId": "inspection-3",
+      "instructions": "Preparar puntos de inspección y condiciones de operación para un dron compatible. Esta plantilla requiere planificación geográfica, validación local y autorización específicas antes de operación real.",
+      "completion": "Recorrido simulado revisado; operación física pendiente de validación.",
+      "steps": [
+        {
+          "name": "Preparación de inspección aérea",
+          "capability": "fly"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-inspection-4",
+      "name": "Recopilación de lecturas de equipos",
+      "category": "Inspección e infraestructura",
+      "categoryId": "inspection",
+      "subcategory": "Instrumentación",
+      "subcategoryId": "inspection-4",
+      "instructions": "Consultar instrumentos integrados y registrar lecturas con ubicación y referencia temporal.",
+      "completion": "Lecturas registradas y revisión del responsable.",
+      "steps": [
+        {
+          "name": "Recopilación de lecturas de equipos",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-agriculture-1",
+      "name": "Observación visual de cultivo",
+      "category": "Agricultura y áreas verdes",
+      "categoryId": "agriculture",
+      "subcategory": "Monitoreo de cultivos",
+      "subcategoryId": "agriculture-1",
+      "instructions": "Capturar imágenes autorizadas en puntos de observación. La evaluación agronómica corresponde al especialista.",
+      "completion": "Imágenes por punto y revisión confirmada.",
+      "steps": [
+        {
+          "name": "Observación visual de cultivo",
+          "capability": "camera"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-agriculture-2",
+      "name": "Revisión de sensores de riego",
+      "category": "Agricultura y áreas verdes",
+      "categoryId": "agriculture",
+      "subcategory": "Riego",
+      "subcategoryId": "agriculture-2",
+      "instructions": "Consultar sensores de humedad y estado habilitados. No accionar válvulas sin una integración validada.",
+      "completion": "Lecturas y anomalías revisadas por el responsable.",
+      "steps": [
+        {
+          "name": "Revisión de sensores de riego",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-agriculture-3",
+      "name": "Entrega de herramientas de jardinería",
+      "category": "Agricultura y áreas verdes",
+      "categoryId": "agriculture",
+      "subcategory": "Jardinería",
+      "subcategoryId": "agriculture-3",
+      "instructions": "Transportar herramientas protegidas e identificadas al punto de trabajo autorizado.",
+      "completion": "Herramientas recibidas y entrega confirmada.",
+      "steps": [
+        {
+          "name": "Entrega de herramientas de jardinería",
+          "capability": "carry"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    },
+    {
+      "id": "base-agriculture-4",
+      "name": "Inspección ambiental de invernadero",
+      "category": "Agricultura y áreas verdes",
+      "categoryId": "agriculture",
+      "subcategory": "Invernaderos",
+      "subcategoryId": "agriculture-4",
+      "instructions": "Recopilar lecturas ambientales en los puntos definidos y señalar desviaciones de los límites del cliente.",
+      "completion": "Registro ambiental revisado por el operador.",
+      "steps": [
+        {
+          "name": "Inspección ambiental de invernadero",
+          "capability": "sensors"
+        }
+      ],
+      "revision": 1,
+      "parentId": null,
+      "createdAt": 0,
+      "author": "NEXO · catálogo propuesto"
+    }
+  ],
+  "categories": [
+    {
+      "id": "maintenance",
+      "name": "Mantenimiento preventivo y correctivo",
+      "description": "Inspección, diagnóstico y apoyo a intervenciones autorizadas.",
+      "subcategories": [
+        {
+          "id": "maintenance-1",
+          "name": "Inspección preventiva"
+        },
+        {
+          "id": "maintenance-2",
+          "name": "Diagnóstico de fallas"
+        },
+        {
+          "id": "maintenance-3",
+          "name": "Apoyo correctivo"
+        },
+        {
+          "id": "maintenance-4",
+          "name": "Verificación posterior"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Hogar",
+      "description": "Apoyo doméstico, organización y acompañamiento.",
+      "subcategories": [
+        {
+          "id": "home-1",
+          "name": "Orden y organización"
+        },
+        {
+          "id": "home-2",
+          "name": "Asistencia doméstica"
+        },
+        {
+          "id": "home-3",
+          "name": "Acompañamiento"
+        },
+        {
+          "id": "home-4",
+          "name": "Custodia de mascotas"
+        },
+        {
+          "id": "home-5",
+          "name": "Revisión del entorno"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Seguridad y vigilancia",
+      "description": "Observación y reporte en espacios autorizados.",
+      "subcategories": [
+        {
+          "id": "security-1",
+          "name": "Rondines"
+        },
+        {
+          "id": "security-2",
+          "name": "Perímetros"
+        },
+        {
+          "id": "security-3",
+          "name": "Accesos"
+        },
+        {
+          "id": "security-4",
+          "name": "Incidentes"
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "name": "Transporte",
+      "description": "Movimiento interno de objetos y suministros.",
+      "subcategories": [
+        {
+          "id": "transport-1",
+          "name": "Paquetería"
+        },
+        {
+          "id": "transport-2",
+          "name": "Última milla"
+        },
+        {
+          "id": "transport-3",
+          "name": "Documentos"
+        },
+        {
+          "id": "transport-4",
+          "name": "Logística inversa"
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "name": "Atención a cliente",
+      "description": "Recepción, orientación y asistencia en instalaciones.",
+      "subcategories": [
+        {
+          "id": "service-1",
+          "name": "Recepción"
+        },
+        {
+          "id": "service-2",
+          "name": "Orientación"
+        },
+        {
+          "id": "service-3",
+          "name": "Información"
+        },
+        {
+          "id": "service-4",
+          "name": "Entrega al cliente"
+        }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Producción y fabricación",
+      "description": "Apoyo a procesos industriales con validación por equipo.",
+      "subcategories": [
+        {
+          "id": "manufacturing-1",
+          "name": "Abastecimiento de línea"
+        },
+        {
+          "id": "manufacturing-2",
+          "name": "Manipulación"
+        },
+        {
+          "id": "manufacturing-3",
+          "name": "Control de calidad"
+        },
+        {
+          "id": "manufacturing-4",
+          "name": "Seguimiento de proceso"
+        }
+      ]
+    },
+    {
+      "id": "cleaning",
+      "name": "Limpieza y servicios generales",
+      "description": "Limpieza de áreas habilitadas y apoyo al suministro.",
+      "subcategories": [
+        {
+          "id": "cleaning-1",
+          "name": "Pisos"
+        },
+        {
+          "id": "cleaning-2",
+          "name": "Pasillos"
+        },
+        {
+          "id": "cleaning-3",
+          "name": "Áreas comunes"
+        },
+        {
+          "id": "cleaning-4",
+          "name": "Reposición"
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Hospitales y asistencia",
+      "description": "Logística no clínica y orientación dentro de hospitales.",
+      "subcategories": [
+        {
+          "id": "health-1",
+          "name": "Logística hospitalaria"
+        },
+        {
+          "id": "health-2",
+          "name": "Orientación de visitantes"
+        },
+        {
+          "id": "health-3",
+          "name": "Supervisión ambiental"
+        },
+        {
+          "id": "health-4",
+          "name": "Apoyo a personal"
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "name": "Inspección e infraestructura",
+      "description": "Observación de instalaciones y diagnóstico de entorno.",
+      "subcategories": [
+        {
+          "id": "inspection-1",
+          "name": "Edificios"
+        },
+        {
+          "id": "inspection-2",
+          "name": "Almacenes"
+        },
+        {
+          "id": "inspection-3",
+          "name": "Exteriores y drones"
+        },
+        {
+          "id": "inspection-4",
+          "name": "Instrumentación"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "name": "Agricultura y áreas verdes",
+      "description": "Monitoreo y apoyo logístico en entornos autorizados.",
+      "subcategories": [
+        {
+          "id": "agriculture-1",
+          "name": "Monitoreo de cultivos"
+        },
+        {
+          "id": "agriculture-2",
+          "name": "Riego"
+        },
+        {
+          "id": "agriculture-3",
+          "name": "Jardinería"
+        },
+        {
+          "id": "agriculture-4",
+          "name": "Invernaderos"
+        }
+      ]
+    }
+  ]
+}
