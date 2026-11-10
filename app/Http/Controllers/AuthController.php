@@ -24,15 +24,16 @@ class AuthController extends Controller
 
     public function login(Request $request): RedirectResponse
     {
-        $data = $request->validate(['email' => 'required|email|max:254', 'password' => 'required|string|max:128']);
-        $data['email'] = strtolower($data['email']);
-        $key = 'login:'.hash('sha256', $data['email'].'|'.$request->ip());
+        $data = $request->validate(['login' => 'required|string|max:254', 'password' => 'required|string|max:128']);
+        $identifier = strtolower(trim($data['login']));
+        $field = filter_var($identifier, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+        $key = 'login:'.hash('sha256', $identifier.'|'.$request->ip());
         if (RateLimiter::tooManyAttempts($key, 5)) {
-            throw ValidationException::withMessages(['email' => 'Demasiados intentos. Espera un minuto.']);
+            throw ValidationException::withMessages(['login' => 'Demasiados intentos. Espera un minuto.']);
         }
-        if (! Auth::attempt($data)) {
+        if (! Auth::attempt([$field => $identifier, 'password' => $data['password']])) {
             RateLimiter::hit($key, 60);
-            throw ValidationException::withMessages(['email' => 'El correo o la contraseña no son correctos.']);
+            throw ValidationException::withMessages(['login' => 'El usuario o correo, o la contraseña no son correctos.']);
         }
         RateLimiter::clear($key);
         $request->session()->regenerate();
@@ -43,8 +44,8 @@ class AuthController extends Controller
     public function register(Request $request): RedirectResponse
     {
         $request->merge(['email' => strtolower((string) $request->input('email', ''))]);
-        $data = $request->validate(['name' => 'required|string|min:2|max:100', 'empresa' => 'nullable|string|max:160', 'email' => 'required|email|max:254|unique:users,email', 'password' => 'required|string|min:12|max:128|confirmed', 'consentimiento' => 'accepted']);
-        $user = User::create(['name' => $data['name'], 'empresa' => $data['empresa'] ?? null, 'email' => strtolower($data['email']), 'password' => $data['password']]);
+        $data = $request->validate(['name' => 'required|string|min:2|max:100', 'username' => 'required|string|min:3|max:50|alpha_dash|unique:users,username', 'empresa' => 'nullable|string|max:160', 'email' => 'required|email|max:254|unique:users,email', 'password' => 'required|string|min:12|max:128|confirmed', 'consentimiento' => 'accepted']);
+        $user = User::create(['name' => $data['name'], 'username' => strtolower($data['username']), 'empresa' => $data['empresa'] ?? null, 'email' => strtolower($data['email']), 'password' => $data['password']]);
         Auth::login($user);
         $request->session()->regenerate();
 
